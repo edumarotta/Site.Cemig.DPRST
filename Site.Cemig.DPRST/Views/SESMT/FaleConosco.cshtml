@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "FaleConosco";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Fale Conosco</h1>
+        <p class=" ">Dê a sua opnião sobre nosso trabalho</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+<div class="container">
+    <ul id=top style="list-style-type: none;">
+        <li>
+            <a href="#">
+                <i class="fas fa-4x fa-chevron-circle-up black" style="color: green;"></i>
+
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="container">
+    <Fieldset>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <Label>Nome:</Label>
+                <input id="nome" class="form-control" type="text" name="" placeholder="Digite o nome">
+            </div>
+            <div class="form-group col-sm-6">
+                <Label>Email</Label>
+                <input id="email" class="form-control" type="email" name="" placeholder="Digite o email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <Label>Gerência:</Label>
+                <input id="gerencia" class="form-control" type="text" name="" placeholder="Digite a Gerência">
+            </div>
+            <div class="form-group col-sm-6">
+                <Label>Telefone:</Label>
+                <input id="telefone" class="form-control" type="tel" name="" placeholder="Digite o telefone">
+            </div>
+        </div>
+        <Label>Mensagem:</Label>
+        <textarea id="areadetexto" class="form-control" tyoe="text" name="" rows="5" placeholder="Digite sua mensagem"></textarea>
+        <br>
+        <button onclick='ValidacaoForm()' class="btn btn-success">Enviar</button>
+        <button onclick='LimpaForm()' class="btn btn-Danger">Limpar</button>
+        <br>
+        <hr>
+        <div class="alert alert-danger" id="msgDanger" role="alert">...</div>
+        <div class="alert alert-Success" id="msgSuccess" role="alert">...</div>
+        <br>
+
+
+    </Fieldset>
+
+</div>
+
+ 

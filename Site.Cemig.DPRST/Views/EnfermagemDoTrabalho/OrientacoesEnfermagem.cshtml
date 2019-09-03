@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "OrientacoesEnfermagem";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Orientações de Enfermagem</h1>
+        <p class="lead"></p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+<!-- #Cards -->
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Exames de Saúde Ocupacional</h5>
+                        <p class="card-text">Programação de Atendimento aos Exames de Saúde Ocupacional</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "ExamesSaudeOcupacional", "EnfermagemDoTrabalho", new { @class = "btn btn-primary" })
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">S de Saúde</h5>
+                        <p class="card-text">"S" de Saúde - Tudo que você precisa saber sobre!</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "SDeSaude", "EnfermagemDoTrabalho", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

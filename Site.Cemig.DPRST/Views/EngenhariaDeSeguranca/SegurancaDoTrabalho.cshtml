@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "SegurancaDoTrabalho";
+}
+
+
+<!-- #Jumbotron-->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Segurança do Trabalho</h1>
+        <p class="lead">Respeite a vida, trabalhe com segurança!</p>
+        <hr class="my-4">
+
+    </div>
+</div>
+
+
+<div class="container">
+    <ul id=top style="list-style-type: none;">
+        <li>
+            <a href="#">
+                <i class="fas fa-4x fa-chevron-circle-up black" style="color: green;"></i></i>
+
+            </a>
+        </li>
+    </ul>
+</div>
+
+<br>
+
+<!-- #Cards -->
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">EPI</h3>
+                        <p class="card-text">Informações sobre EPI´s. Especificações e mais.</p>
+                        <br>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "EPI", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Atribuições do técnico</h3>
+                        <p class="card-text">Veja as atribuições dos Técnicos de segurança do Trabalho.</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtribuicoesTecnicos", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br>

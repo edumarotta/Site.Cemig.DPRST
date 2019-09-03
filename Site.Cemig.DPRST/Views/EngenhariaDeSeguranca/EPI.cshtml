@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "EPI";
+}
+
+<!-- #Jumbo-->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Equipamentos de Proteção Individual</h1>
+        <p class="lead">Respeite a vida, trabalhe com segurança!</p>
+        <hr class="my-4">
+    </div>
+</div>
+<!-- #Jumbo-->
+
+
+<!-- #Cards-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 21rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/requisicao_epi.jpeg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Planilha de solicitação de EPI</h5>
+                        <p class="card-text">Faça download da planilha de solicitaçõ de EPI e veja como fazer o chamado</p>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="epi_download.html" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 21rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/epi12.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Informações sobre EPI´s</h5>
+                        <p class="card-text">Tire suas duvidas sobre os EPI´s utilizados na CEMIG</p>
+                        <br>
+                        <br>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "InformacoesEPI", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 21rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/manual_epi.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manual EPI CEMIG</h5>
+                        <p class="card-text">Manuais da CEMIG para utilização dos EPI´s</p>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="arquivos/01000-MEPI-SESMT-4.4.6-002 b_Manual de Equipamentos de Proteção Individual.pdf" target="_blank"
+                           class="btn btn-primary">Visitar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

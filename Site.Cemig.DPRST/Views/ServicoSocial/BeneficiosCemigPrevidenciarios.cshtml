@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "BeneficiosCemigPrevidenciarios";
+}
+
+
+<!-- #Jumbotron-->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Benefícios Cemig e Previdenciários</h1>
+        <p class="lead"></p>
+        <hr class="my-4">
+
+    </div>
+</div>
+<br>
+<!-- #up -->
+<div class="container">
+    <ul id=top style="list-style-type: none;">
+        <li>
+            <a href="#">
+                <i class="fas fa-4x fa-chevron-circle-up black" style="color: green;"></i></i>
+
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- #up -->
+<div class="container">
+    <div class="txtJus">
+
+        <!-- #Cards-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="border border-success">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Benefícios Cemig</h5>
+                                <p class="card-text">Veja sobre as orientações dos Benefícios da Cemig</p>
+                                <br>
+                                
+                                @Html.ActionLink("Visitar", "BeneficiosCemig", "Serviço Social", new { @class = "btn btn-primary" })
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="border border-success">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Benefícios Previdenciários</h5>
+                                <br>
+                                <p class="card-text">Veja as orientações dos benefícios Previdenciários.</p>
+                                <a href="beneficios_previdenciarios.html" class="btn btn-primary">Vamos Lá!</a>
+                                @Html.ActionLink("Visitar", "BeneficiosPrevidenciarios", "Serviço Social", new { @class = "btn btn-primary" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #Cards-->

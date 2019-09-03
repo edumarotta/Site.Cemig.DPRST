@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-success">
+        <a class="navbar-brand" href="#"><img class="grow" src="~/img/logosemfundo2.png" alt="some text" width=80 height=40 style="left: 10px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" @Html.ActionLink("Home","Index","Home") </a>
+                </li>
+                <!--SESMT-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SESMT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" @Html.ActionLink("Segurança, Saúde e Bem Estar", "SSBE", "SESMT")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Instruções do SESMT", "InstrucoesSESMT", "SESMT")</a>
+                        <a class="dropdown-item" @Html.ActionLink("GESET", "GESET", "SESMT")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Manuais Técnicos", "ManuaisTecnicos", "SESMT")</a>
+                        <a class="dropdown-item" @Html.ActionLink("SIMASP", "SIMASP", "SESMT")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Fale Conosco", "FaleConosco", "SESMT")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Links Úteis", "linksUteis", "SESMT")</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Engenharia de Segurança
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" @Html.ActionLink("Sobre a Engenharia de Segurança", "SobreEngenhariaSeguranca", "EngenhariaDeSeguranca")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Atribuições", "AtribuicoesEngenharia", "EngenhariaDeSeguranca")</a>
+                        <a class="dropdown-item" @Html.ActionLink("CIPA", "cipa", "EngenhariaDeSeguranca")</a>
+                        <a class="dropdown-item" @Html.ActionLink("PPRA", "ppra", "EngenhariaDeSeguranca")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Segurança do Trabalho", "SegurancaDoTrabalho", "EngenhariaDeSeguranca")</a>
+                    </div>
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Medicina do Trabalho
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" @Html.ActionLink("Sobre a Medicina do Trabalho", "SobreMedicinaDoTrabalho", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Atribuições", "AtribuicoesMedicina", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Exames Medicos", "ExamesMedicos", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("PCMSO", "pcmso", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("ASO", "aso", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Dicas de Saúde", "DicasSaude", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Dúvidas Frequentes", "DuvidasFrequentes", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Indicadores Médicos", "IndicadoresMedicos", "MedicinaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Ergonomia", "Ergonomia", "MedicinaDoTrabalho")</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Psicologia do trabalho
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" @Html.ActionLink("Sobre a Psicologia do Trabalho", "SobrePsicologiaTrabalho", "PsicologiaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Atribuições", "AtribuicoesPsicologia", "PsicologiaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Avaliações Psicológicas", "AvaliacoesPsicologicas", "PsicologiaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Assessoria e Palestras", "AssessoriaePalestras", "PsicologiaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Acompanhamento Sócio-Funcional", "AcompanhamentoSocioFuncional", "PsicologiaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Acompanhamento Empregado Acidentado", "AcompanhamentoEmpregadoAcidentado", "PsicologiaDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Visitas a Locais de Trabalho", "VisitasLocaisTrabalho", "PsicologiaDoTrabalho")</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Enfermagem do Trabalho
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" @Html.ActionLink("Sobre a Enfermagem do Trabalho", "SobreEnfermagemTrabalho", "EnfermagemDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Atribuições", "AtribuicoesEnfermagem", "EnfermagemDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Vacinações", "Vacinacoes", "EnfermagemDoTrabalho")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Orientações de Enfermagem", "OrientacoesEnfermagem", "EnfermagemDoTrabalho")</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Serviço Social  
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" @Html.ActionLink("Sobre o Serviços Social", "SobreServicoSocial", "ServicoSocial")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Atribuições", "AtribuicoesServiucoSocial", "ServicoSocial")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Beneficios Cemig e Previdenciários", "BeneficiosCemigPrevidenciarios", "ServicoSocial")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Saúde, Qualidade de Vida e Finanças Pessoais", "SaudeQualidadeDeVidaFinancasPessoais", "ServicoSocial")</a>
+                        <a class="dropdown-item" @Html.ActionLink("CEPAP", "cepap", "Serviços Sociais")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Grupo de Ajuda - Recursos com a Comunidade", "grupodeajuda", "ServicoSocial")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Palestras, Dicas e Bem-Estar", "palestrasdicasbemestar", "ServicoSocial")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Contato", "Contato", "ServicoSocial")</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gestão de Acidentes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" @Html.ActionLink("Classificação de Acidentes", "classificacaodeacidentes", "GestaoDeAcidentes")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Cadastro de Acidentes", "cadastrodeacidentes", "GestaoDeAcidentes")</a>
+                        <a class="dropdown-item" @Html.ActionLink("Estatisticas de Acidentes", "estatisticasdeacidentes", "GestaoDeAcidentes")</a>  
+                    </div>
+                </li>
+
+
+            </ul>
+ 
+        </div>
+    </nav>
+    <br /><br /><br />
+
+
+
+
+    <!-- #Para Cima-->
+    <ul id=top style="list-style-type: none;">
+        <li>
+            <a href="#">
+                <i class="fas fa-4x fa-chevron-circle-up black" style="color: #0275d8;"></i>
+
+            </a>
+        </li>
+    </ul>
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-success" style="background-color: #28a745;">
+
+            <div class="container">
+                <div class="container">
+                    <br /><br />
+                    <!--Primeira Coluna-->
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <div class="span2 grow">CEMIG</div>
+                                  <br />
+                                  <div class="span3">
+                                      SESMT - CEMIG <br />Av. Barbacena, 1200, SAnto Agostinho, <br />Belo Horizonte - MG<br />
+                                  </div>
+                              </div>
+
+
+                              <!--Segunda Coluna-->
+                              <div class="col-sm-4">
+                                  <div class="span2 grow">SOFTWARES</div>
+                                  <br />
+                                  <div class="http://gedex/GESET" target="_blank">GESET</div>
+                                  <div class="http://sa-corp-jboss:8000/gdissp" target="_blank">SIMASP</div>
+                                  <div class="http://sa-corp-jboss:8000/gdissp" target="_blank">GEDEX</div>
+                              </div>
+
+
+                              <!--Segunda Coluna-->
+                              <div class="col-sm-4">
+                                  <div class="span2 grow">SOFTWARES</div>
+                                  <br />
+                                  <div class="http://gedex/GESET" target="_blank">GESET</div>
+                                  <div class="http://sa-corp-jboss:8000/gdissp" target="_blank">SIMASP</div>
+                                  <div class="http://sa-corp-jboss:8000/gdissp" target="_blank">GEDEX</div>
+                              </div>
+
+
+                          </div>
+
+
+                </div>
+            </div>
+            <br /><br /><br />
+        </nav>
+
+
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "GESET";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Núcleo GESET</h1>
+        <p class="lead">Informações sobre o Núcleo GESET</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+<!-- #Cards -->
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/geset logo 2 - Copia.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Responsabilidades GESET</h5>
+                        <p class="card-text">Veja aqui as Responsabilidades do Núcleo GESET</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "ResponsaGeset", "SESMT", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/pexels-photo-1068523.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Equipe</h5>
+                        <p class="card-text">Veja aqui informações sobre a Equipe</p>
+                        <br>
+                        <br />
+                        
+                        @Html.ActionLink("Visitar", "EquipeGeset", "SESMT", new { @class = "btn btn-primary" })
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/pexels-photo-905874.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Outras Informações</h5>
+                        <p class="card-text">Informações técnicas sobre o Núcleo GESET</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "OutrasInfosGeset", "SESMT", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Sobre a Enfermagem do Trabalho";
+}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Enfermagem do Trabalho</h1>
+        <p class="lead">Informações sobre a Enfermagem do Trabalho da CEMIG</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+
+<!-- #Cards -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/Enfermagem.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Atribuições</h5>
+                        <p class="card-text">Responsabilidades do profissional</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtribuicoesEnfermagem", "SESMT", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/enfermagem_vacinacao.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vacinações</h5>
+                        <p class="card-text">Confira as informações sobre Vacinações disponivéis</p>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "vacinacoes", "SESMT", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 22rem;">
+                <span class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/nurse-359323__340.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Orientações de Enfermagem</h5>
+                        <p class="card-text">Confira as Orientações de nossos Enfermeiros</p>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "OrientacoesEnfermagem", "SESMT", new { @class = "btn btn-primary" })
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Vacinacoes";
+}
+<!-- #Jumbotron-->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Vacinações</h1>
+        <p class="lead">Informações sobre as Vacinações</p>
+        <hr class="my-4">
+
+    </div>
+</div>
+
+<!-- #Cards-->
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Informações sobre vacinação</h5>
+                        <p class="card-text">Veja as informações sobre as vacinações</p>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "InfosVacinacao", "EnfermagemDoTrabalho", new { @class = "btn btn-primary" })
+
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medidas de Prevenção</h5>
+                        <p class="card-text">Veja as medidas de prevenção de diversas doenças</p>
+                        <br>
+                            
+                        @Html.ActionLink("Visitar", "MedidasPrevencao", "EnferamgemDotrabalho", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

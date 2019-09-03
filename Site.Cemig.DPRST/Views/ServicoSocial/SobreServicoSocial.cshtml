@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "SobreServicoSocial";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Serviço Social</h1>
+        <p class="lead">Informações sobre a Assitência Social da CEMIG</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+
+<!-- #Cards -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/assistencia_social.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Atribuições</h5>
+                        <p class="card-text">Responsabilidades do profissional</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtributosServicoSocial", "ServicoSocial", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/assistencia_social.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Benefícios Cemig e Previdenciários</h5>
+                        <p class="card-text">Sobre os Beneficios e Previdenciários da Cemig</p>
+                        @Html.ActionLink("Visitar", "BeneficiosEPrevidenciarios", "ServicoSocial", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc " src="~/img/security.png " alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Segurança</h5>
+                        <p class="card-text">Veja o quadro de assistentes sociais da CEMIG</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "Seguranca", "ServicoSocial", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br /><br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/assistencia_social.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Saúde, Qualidade de Vida e Finanças Pessoais</h5>
+                        <p class="card-text">Informações sobre saúde, qualidade de vida e finanças pessoais</p>
+                        @Html.ActionLink("Visitar", "SaudeQualidadeFinancas", "ServicoSocial", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc " src="~/img/security.png " alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Campanha externa de prevenção de acidentes com a população</h5>
+                        <p class="card-text">Informações sobre o CEPAP</p>
+                        
+                        @Html.ActionLink("Visitar", "CEPAP", "ServicoSocial", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/gajuda.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Grupos de Ajuda - Recursos com a comunidade</h5>
+                        <p class="card-text">Veja as Informações sobre grupo de ajuda.</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "GrupoDeAjuda", "ServicoSocial", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br /><br /><br />
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Palestras e dicas do Bem-Estar</h5>
+                        <p class="card-text">Veja sobre Palestras e dicas do Bem-estar</p>
+                        @Html.ActionLink("Visitar", "PalestrasDicasBemEstar", "ServicoSocial", new { @class = "btn btn-primary" })
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Contato</h5>
+                        <p class="card=-text">Informações sobre Contatos do Serviço Social</p>
+                        @Html.ActionLink("Visitar", "Contato", "ServicoSocial", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<br>

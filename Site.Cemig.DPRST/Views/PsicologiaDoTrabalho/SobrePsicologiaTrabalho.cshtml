@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Psicologia do Trabalho";
+}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Psicologia do Trabalho</h1>
+        <p class="lead">Informações sobre a Psicologia do Trabalho da CEMIG</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+<div class="container">
+    <ul id=top style="list-style-type: none;">
+        <li>
+            <a href="#">
+                <i class="fas fa-4x fa-chevron-circle-up black" style="color: green;"></i></i>
+
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- #Cards -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/psychologist-1015488__340.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Atribuições</h5>
+                        <p class="card-text">Responsabilidades do profissional</p>
+                        <br>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtribuicoesPsicologia", "PsicologiaDoTrabalho", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/aval_psicol.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Avaliações Psicologicas</h5>
+                        <p class="card-text">Confira as avaliações psicologicas disponivéis</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AvaliacoesPsicologicas", "PsicologiaDoTrabalho", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/palestras.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Assessoria e Palestras</h5>
+                        <p class="card-text">Informações sobre Assessoria e palestras do DPR/ST</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtribuicoesPsicologia", "PsicologiaDoTrabalho", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br />
+<hr />
+<br />  
+<!-- #Cards-->
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Acompanhamento Sócio-Funcional</h5>
+                        <p class="card-text">Veja informações sobre acompanhamentos do DPR/ST</p>
+                        <br><br>
+                        @Html.ActionLink("Visitar", "AcompanhamentoSocioFuncional", "PsicologiaDoTrabalho", new { @class = "btn btn-primary" })
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Acompanhamento de Empregados Acidentados</h5>
+                        <p class="card-text">Veja informações sobre acompanhamentos de Empregados Acidentados</p><br>
+                        @Html.ActionLink("Visitar", "AcompanhamentoEmpregadoAcidentado", "PsicologiaDoTrabalho", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Visita a Locais de Trabalho</h5>
+                        <br>
+                        <p class="card-text">Veja informações sobre Visitas a Locais de Trabalho pelo DPR/ST</p>
+                        <br>
+                        <br />
+                        @Html.ActionLink("Visitar", "VisitasLocaisTrabalho", "PsicologiaDoTrabalho", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>

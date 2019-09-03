@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Ergonomia";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Ergonomia</h1>
+        <p class="lead"></p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Conceitos e Objetivos</h3>
+                        <p class="card-text">Veja os Conceitos e Objetivos da Ergonomia</p>
+                        
+                        @Html.ActionLink("Visitar", "ErgonomiaConceitos", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Artigos e Publicações</h3>
+                        <p class="card-text">Veja aqui os Artigos e Publicações sobre Ergonomia</p>
+                        
+                        @Html.ActionLink("Visitar", "ErgonomiaArtigos", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+

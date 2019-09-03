@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "SobreEngenhariaSeguranca";
+}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Engenharia de Segurança</h1>
+        <p class="lead">Informações sobre a Engenharia de Segurança da CEMIG</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+<!-- #Cards -->
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/manuais_tec.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Atribuições</h5>
+                        <p class="card-text">Veja aqui as Responsabilidades do Núcleo GESET</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtribuicoesEngenharia", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/cipa.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">CIPA</h5>
+                        <p class="card-text">Informações sobre a Comissão Interna de prevenção de Acidentes</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "cipa", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <span class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/PPRA.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">PPRA</h5>
+                        <p class="card-text">Informações sobre Programa de Prevenção dos Riscos Ambientais</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "ppra", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <span class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/PPRA.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">PPRA</h5>
+                        <p class="card-text">Informações sobre Programa de Prevenção dos Riscos Ambientais</p>
+                        <br>
+                        @Html.ActionLink("Visitar", "ppra", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+<br>
+<br>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Segurança do Trabalho</h5>
+                        <p class="card-text">Informações sobre a Segurança do trabalho</p>
+                        <br><br>
+                        @Html.ActionLink("Visitar", "SegurancaDoTrabalho", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">EPI</h5>
+                        <p class="card-text">Informações EPIs</p>
+
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "EPI", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

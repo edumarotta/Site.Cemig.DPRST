@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "ppra";
+}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">PPRA</h1>
+        <p class="lead">Informações sobre Programa de Prevenção dos Riscos Ambientais</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+
+
+<div class="container">
+    <h3>PPRA</h3>
+    <div class="txtJus">
+
+        <p>
+            O Programa de Prevenção de Riscos Ambientais - PPRA foi instituído pela Portaria MTE nº 25, de 29.12.94
+            e
+            republicada
+            em 15-02-1995, aprovando o texto da NR-9 que estabeleceu a obrigatoriedade da sua elaboração e
+            implantação,
+            por
+            parte de
+            todas as empresas, empregadores e instituições que admitam trabalhadores como empregados.
+        </p>
+
+        <p>
+            O PPRA é descrito no documento base que contém os aspectos estruturais do programa, como o planejamento
+            anual
+            com
+            estabelecimento de metas, prioridades e cronograma, estratégia e metodologia de ação, forma de
+            registro,
+            manutenção e
+            divulgação dos dados bem como a periodicidade e forma de avaliação do desenvolvimento do programa.
+        </p>
+        <p>
+            Conforme a NR-9, cada estabelecimento da empresa deve ter o seu PPRA, que deverá ser reservado pelo
+            menos
+            uma
+            vez ao
+            ano, ou sempre que houver alterações no quadro funiconal, no layout do estabelecimento ou nos processos
+            de
+            trabalho.
+            Elaboração do PPRA.
+        </p>
+
+    </div>
+
+    <br>
+
+
+    
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="border border-success">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Procedimentos</h5>
+                            <p class="card-text">Veja sobre osprocedimentos do PPRA</p>
+                            @Html.ActionLink("Visitar", "PPRAProcedimentos", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="border border-success">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Orientações do PPRA</h5>
+                            <p class="card-text">Clique abaixo para ver as Orientações técnincas do PPRA.</p>
+                            @Html.ActionLink("Visitar", "PPRAOrientacoes", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    
+</div>

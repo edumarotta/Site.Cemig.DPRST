@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "CIPA";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">CIPA</h1>
+        <p class="lead">Informações sobre a Comissão Interna de Convenção de Acidentes</p>
+        <hr class="my-2">
+
+    </div>
+</div>
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 21rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/saude_e_b_estar.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">A CIPA na Cemig.</h5>
+                        <p class="card-text">Informações sobre a CIPA na CEMIG.</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "CipaCemig", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 21rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/sipat.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">SIPAT</h5>
+                        <p class="card-text">Confira as informações sobre o SIPAT</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "SIPAT", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 21rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/equipe.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Treinamentos</h5>
+                        <p class="card-text">Treinamentos do SESMT</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "TreinamentoCIPA", "EngenhariaDeSeguranca", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>

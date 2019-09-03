@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "SobreMedicinaDoTrabalho";
+}
+
+<!-- #Jumbo-->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Medicina do Trabalho</h1>
+        <p class="lead">Informações sobre a Medicina do Trabalho da CEMIG</p>
+        <hr class="my-4">
+    </div>
+</div>
+<!-- #Jumbo-->
+
+<!-- #Cards -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/Atrib_Medicina.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">Atribuições</h3>
+                        <p class="card-text">Resposanbilidades do profissional</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "AtribuicoesMedicina", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/exames_ocupacionais.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">Exames Médicos</h3>
+                        <p class="card-text">Informações sobre os Exames Médicos</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "ExamesMedicos", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <!--CORRIGIR DIV OU IMAGEM-->
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/pcmso.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">PCMSO</h3>
+                        <p class="card-text">Informações sobre Programa de Controle Medico de Saúde Ocupacional</p>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "PCMSO", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/Atrib_Medicina.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">ASO</h3>
+                        <p class="card-text">Sobre Atestado de Saúde Ocupacinonal</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "ASO", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/exames_ocupacionais.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">Dicas de Saúde</h3>
+                        <p class="card-text">Vejas as dicas de Saúde do DPR/ST</p>
+                        <br>
+                        
+                        <br>
+                        @Html.ActionLink("Visitar", "DicasSaude", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 22rem;">
+                <!--CORRIGIR DIV OU IMAGEM-->
+                <div class="border border-success">
+                    <img class="card-img-top efeitoOpc" src="~/img/pcmso.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">Dúvidas Frequentes</h3>
+                        <p class="card-text">Dúvidas sobre a medicina do trabalho</p>
+                        <br>
+                        <br>
+                        @Html.ActionLink("Visitar", "ASO", "DuvidasMedicina", new { @class = "btn btn-primary" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br><br>
+
+<!-- #Cards-->
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Ergonomia</h3>
+                        <p class="card-text">Veja sobre as Informações sobre Ergonomia</p>
+                        <br>
+                        
+                        @Html.ActionLink("Visitar", "ASO", "Ergonomia", new { @class = "btn btn-primary" })
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-success">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Indicadores Médicos</h3>
+                        <p class="card-text">Clique abaixo para ver os indicadores médicos anteriores.</p><br>
+                        @Html.ActionLink("Visitar", "IndicadoresMedicos", "MedicinaDoTrabalho", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #Cards-->
