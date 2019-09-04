@@ -126,6 +126,7 @@
     <Compile Include="Controllers\EngenhariaDeSegurancaController.cs" />
     <Compile Include="Controllers\GestaoDeAcidentesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MedicinaDoTrabalhoController.cs" />
     <Compile Include="Controllers\PsicologiaDoTrabalhoController.cs" />
     <Compile Include="Controllers\ServicoSocialController.cs" />
@@ -2479,6 +2480,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Login\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
