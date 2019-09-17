@@ -122,6 +122,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\EnfermagemDoTrabalhoController.cs" />
     <Compile Include="Controllers\EngenhariaDeSegurancaController.cs" />
     <Compile Include="Controllers\GestaoDeAcidentesController.cs" />
@@ -131,9 +132,12 @@
     <Compile Include="Controllers\PsicologiaDoTrabalhoController.cs" />
     <Compile Include="Controllers\ServicoSocialController.cs" />
     <Compile Include="Controllers\SESMTController.cs" />
+    <Compile Include="Entidades\Acesso.cs" />
+    <Compile Include="Entidades\EntidadeBase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2485,7 +2489,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Arquivos\" />
-    <Folder Include="Models\" />
+    <Folder Include="Authentocation\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Views\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
